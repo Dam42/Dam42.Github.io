@@ -164,7 +164,7 @@
 
 .lista_z_polecanymi {
     position: relative;
-    right: 70px;
+    right: 60px;
     height: 40px;
     border-left: 5px solid #97ffff;
     margin: 7px 0px;
@@ -176,7 +176,7 @@
 }
 .linkp {
     position: relative;
-    left: 200px;
+    left: 140px;
     text-decoration: none;
     color: black;
 }

@@ -92,7 +92,7 @@
 /* tu się kończy header */
 #content {
     clear: both;
-    height: 849px;
+    height: 859px;
     background-color: #1A1A1B;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,7 +155,7 @@
 
 .lista_z_polecanymi {
     position: relative;
-    right: 70px;
+    right: 60px;
     height: 40px;
     border-left: 5px solid #690000;
     margin: 7px 0px;
@@ -172,7 +172,7 @@
     background-color: #690000;
     animation-name: expand;
     animation-duration: 1s;
-    width: 489px;
+    width: 459px;
 }
 
 @keyframes expand {
@@ -191,9 +191,11 @@
 }
 .linkp {
     position: relative;
-    left: 200px;
+    left: 140px;
     text-decoration: none;
     color: snow;
+    width: 459px;
+    
 }
 
 #info {
