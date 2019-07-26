@@ -158,12 +158,13 @@
     left: 200px;
     font-size: 26px;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
 .lista_z_polecanymi {
     position: relative;
-    left: 130px;
+    right: 70px;
     height: 40px;
     border-left: 5px solid #97ffff;
     margin: 7px 0px;
@@ -171,9 +172,13 @@
     padding-left: 36px;
     background-color: rgb(232, 255, 255);
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
-
-
+   
+}
+.linkp {
+    position: relative;
+    left: 200px;
+    text-decoration: none;
+    color: black;
 }
 
 .lista_z_polecanymi:hover {

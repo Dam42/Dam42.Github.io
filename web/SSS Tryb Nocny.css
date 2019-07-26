@@ -147,7 +147,7 @@
     text-align: left;
     position: relative;
     left: 200px;
-    font-size: 27px;
+    font-size: 26px;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
 
@@ -155,7 +155,7 @@
 
 .lista_z_polecanymi {
     position: relative;
-    left: 130px;
+    right: 70px;
     height: 40px;
     border-left: 5px solid #690000;
     margin: 7px 0px;
@@ -188,6 +188,12 @@
 .link {
     text-decoration: none;
     color: Black;
+}
+.linkp {
+    position: relative;
+    left: 200px;
+    text-decoration: none;
+    color: snow;
 }
 
 #info {
@@ -239,5 +245,4 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
 }
