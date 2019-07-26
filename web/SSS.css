@@ -78,6 +78,7 @@
     position: relative;
     top: 24px;
     left: 190px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .napis_tryb_nocny_dzienny {
@@ -166,10 +167,11 @@
     height: 40px;
     border-left: 5px solid #97ffff;
     margin: 7px 0px;
-    padding-top: 4px;
+    padding-top: 7px;
     padding-left: 36px;
     background-color: rgb(232, 255, 255);
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
 
 
 }
@@ -220,6 +222,7 @@
     left: 240px;
     font-size: 25px;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .kontakty {
@@ -242,4 +245,5 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
