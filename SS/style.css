@@ -228,6 +228,8 @@ html {
 
 .img-main {
     transition: all .5s ease-in-out;
+    max-width: 520px;
+    max-height: 657px;
 }
 
 .img-main:hover {
