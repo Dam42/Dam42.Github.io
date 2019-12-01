@@ -224,23 +224,16 @@ html {
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .img-bray {
-        width: 70%;
-        height: 70%;
-    }
-}
-
 .img-bray {
     background: url('pics/wujekbray.png') center bottom no-repeat /contain;
-    width: 420px;
+    max-width: 520px;
     height: 657px;
     transition: all 1.5s ease-in-out;
 }
 
 .img-bray:hover {
     background: url('pics/Superstar_Bray_Title_Profile.png') center bottom no-repeat /contain;
-    width: 420px;
+    max-width: 520px;
     height: 657px;
     transform: scale(1.05);
     transition: all 3s;
