@@ -224,6 +224,13 @@ html {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .img-bray {
+        width: 70%;
+        height: 70%;
+    }
+}
+
 .img-bray {
     background: url('pics/wujekbray.png') center bottom no-repeat /contain;
     width: 520px;
