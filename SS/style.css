@@ -205,6 +205,14 @@ html {
     transition: all 1.5s;
 }
 
+@media only screen and (max-width: 700px) {
+    .belt:hover {
+        transform: scale(1.3);
+        transition: all 1.5s;
+    }
+}
+
+
 .match-stipulation {
     font-size: 40px;
 }
@@ -226,23 +234,6 @@ html {
     font-weight: bold;
 }
 
-.img-main {
-    transition: all .5s ease-in-out;
-    max-width: 520px;
-    max-height: 657px;
-}
-
-.img-main:hover {
-    transform: scale(1.05);
-    transition: all 3s;
-}
-
-@media only screen and (max-width: 600px) {
-    .img-main {
-        width: 100%;
-    }
-}
-
 .img-bray {
     background: url('pics/wujekbray.png') center bottom no-repeat /contain;
     max-width: 520px;
@@ -254,6 +245,18 @@ html {
     background: url('pics/Superstar_Bray_Title_Profile.png') center bottom no-repeat /contain;
     max-width: 520px;
     height: 657px;
+    transform: scale(1.05);
+    transition: all 3s;
+}
+
+.img-daniel {
+    background: url('pics/Daniel_Bryan_pro.png') center bottom no-repeat /contain;
+    max-width: 520px;
+    height: 657px;
+    transition: all 1.5s ease-in-out;
+}
+
+.img-daniel:hover {
     transform: scale(1.05);
     transition: all 3s;
 }
