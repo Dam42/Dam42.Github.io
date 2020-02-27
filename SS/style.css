@@ -245,7 +245,7 @@ html {
     background: url('pics/Superstar_Bray_Title_Profile.png') center bottom no-repeat /contain;
     max-width: 520px;
     height: 657px;
-/*    transform: scale(1.05);*/
+    /*    transform: scale(1.05);*/
     transition: all 3s;
 }
 
@@ -284,15 +284,13 @@ html {
     font-size: 35px;
 }
 
-.result-stipulation {}
-
 /*footer*/
 
 
 
 .footer-bg {
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url('pics/publika.jpg') center center no-repeat /cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url('pics/publika.jpg') center center /cover;
     width: 100%;
 }
 
