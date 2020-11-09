@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.places {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.container-pass {
+    margin-top: 5% !important;
+}
+
+.container-hub {
+    background: url('../img/hub.jpg') no-repeat center center /cover;
+}
+
+.container-academy {
+    background: url('../img/academy.jpg') no-repeat center center /cover;
+}
+
+.container-fortress {
+    background: url('../img/fortress.jpg') no-repeat center center /cover;
+}
+.container-dungeon {
+    background: url('../img/dungeon.jpg') no-repeat center center /cover;
+}
+
+.arrow {
+    color: rgb(255, 255, 255);
+    font-size: 250px;
+    line-height: 400px;
+    z-index: 2;
+    height: 50vh;
+}
+
+.go-left:hover {
+    background: linear-gradient(.75turn, rgba(255, 255, 255, 0.05), rgba(255,255,255,.2));
+    cursor: url('../img/goLeft.png'), auto;	
+}
+
+.go-right:hover {
+    background: linear-gradient(.25turn, rgba(255, 255, 255, 0.05), rgba(255,255,255,.2));
+    cursor: url('../img/goRight.png'), auto;
+}
+
+.go-left {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+.go-right {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+.key {
+    z-index: 2;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 150px;
+    border: 3px rgba(209, 160, 0, 0.288) solid;
+    padding: 5px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.label-hasla {
+    display: block;
+    color: snow;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+}
+
+.label-hidden {
+    color: rgba(0,0,0,.5);
+}
+
+/* fortress letters */
+
+.label-fortress {
+    background: linear-gradient(0.25turn, rgba(0,0,0,0) 5%, rgba(255, 180, 40, .2) 25%, rgba(255, 180, 40, .4) 50%, rgba(255, 180, 40, .2) 65%, rgba(0,0,0,0) 95%);
+}
+
+.letter-fortress {
+    background-color: rgba(255, 180, 40, .4);
+    border: 3px rgb(255, 180, 40) solid;
+}
+
+.letter-fortress:focus {
+    animation: fortress .2s ease-in-out forwards;
+}
+
+@keyframes fortress {
+    0% {background-color: rgba(255, 180, 40, .4);}
+    100% { background-color: rgba(0, 0, 0, .2);}
+}
+
+.letter-fortress-correct {
+    background-color: rgba(0, 0, 0, .4);
+    border: 3px rgb(255, 175, 25) solid;
+    pointer-events: none;
+}
+
+/* academy letters */
+
+.label-academy {
+    background: linear-gradient(0.25turn, rgba(0,0,0,0) 5%, rgba(40, 151, 255, .2) 25%, rgba(40, 151, 255, .4) 50%, rgba(40, 151, 255, .2) 65%, rgba(0,0,0,0) 95%);
+}
+
+.letter-academy {
+    background-color: rgba(40, 151, 255, .4);
+    border: 3px rgb(40, 151, 255) solid;
+}
+
+.letter-academy:focus {
+    animation: academy .2s ease-in-out forwards;
+}
+
+@keyframes academy {
+    0% {background-color: rgba(40, 151, 255, .4);}
+    100% { background-color: rgba(0, 0, 0, .2);}
+}
+
+.letter-academy-correct {
+    background-color: rgba(0, 0, 0, .4);
+    border: 3px rgb(27, 145, 255) solid;
+    pointer-events: none;
+}
+
+/* dungeon letters */
+
+.label-dungeon {
+    background: linear-gradient(0.25turn, rgba(0,0,0,0) 5%, rgba(140, 40, 255, .2) 25%, rgba(140, 40, 255, .4) 50%, rgba(140, 40, 255, .2) 65%, rgba(0,0,0,0) 95%);
+}
+
+.letter-dungeon {
+    background-color: rgba(140, 40, 255, .4);
+    border: 3px rgb(140, 40, 255) solid;
+}
+
+.letter-dungeon:focus {
+    animation: dungeon .2s ease-in-out forwards;
+}
+
+@keyframes dungeon {
+    0% {background-color: rgba(140, 40, 255, .4);}
+    100% { background-color: rgba(0, 0, 0, .2);}
+}
+
+.letter-dungeon-correct {
+    background-color: rgba(0, 0, 0, .4);
+    border: 3px rgb(132, 24, 255) solid;
+    pointer-events: none;
+}
+
+.letter {
+    width: 45px;
+    height: 55px;
+    margin: 5px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: white;
+}
+
+.letter:focus {
+    outline: none;
+}
+
+.hidden-letter-h {
+    color: black;
+    font-size: 100px;
+    position: relative;
+    top: 13%;
+    left: 68%;
+    width: 50px;
+}
+
+.message {
+    background: linear-gradient(rgba(0,0,0,2), rgba(0,0,0,2));
+    color: whitesmoke;
+    border: 3px snow solid;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg-darkered {
+    background: rgba(0,0,0,.5);
+}
+
+
+/* .module {
+    cursor: url('path-to-image.png'), auto;	
+  } */
