@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.places {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.container-pass {
+    margin-top: 5% !important;
+}
+
+.container-hub {
+    background: url('../img/hub.jpg') no-repeat center center /cover;
+}
+
+.container-academy {
+    background: url('../img/academy.jpg') no-repeat center center /cover;
+}
+
+.container-fortress {
+    background: url('../img/fortress.jpg') no-repeat center center /cover;
+}
+
+.container-dungeon {
+    background: url('../img/dungeon.jpg') no-repeat center center /cover;
+}
+
+.arrow {
+    color: rgb(255, 255, 255);
+    font-size: 250px;
+    line-height: 400px;
+    z-index: 2;
+    height: 50vh;
+}
+
+.go-left:hover {
+    background: linear-gradient(.75turn, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .2));
+    cursor: url('../img/goLeft.png'), auto;
+    user-select: none;
+}
+
+.go-right:hover {
+    background: linear-gradient(.25turn, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, .2));
+    cursor: url('../img/goRight.png'), auto;
+    user-select: none;
+}
+
+.go-left {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+.go-right {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+.key {
+    z-index: 2;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 170px;
+    height: 52px;
+    border: 3px rgba(209, 160, 0, 0.288) solid;
+    padding: 5px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.key-piece-academy {
+    z-index: 2;
+    position: absolute;
+    top: 43%;
+    right: 20%;
+    width: 50px;
+    animation: keyAnimationAcademy .9s ease-in infinite alternate-reverse;
+    cursor: grab;
+}
+
+@keyframes keyAnimationAcademy {
+    0% {
+        top: 44%;
+        width: 50px;
+    }
+
+    25% {
+        top: 43.7%;
+        width: 51px;
+    }
+
+    50% {
+        top: 43.4%;
+        width: 51px;
+    }
+
+    100% {
+        top: 43.1%;
+        width: 52px;
+    }
+}
+
+.key-piece-dungeon {
+    z-index: 2;
+    position: absolute;
+    top: 48%;
+    right: 19%;
+    width: 40px;
+    animation: keyAnimationDungeon .8s ease-in infinite alternate-reverse;
+    cursor: grab;
+}
+
+@keyframes keyAnimationDungeon {
+    0% {
+        top: 48%;
+        width: 40px;
+    }
+
+    25% {
+        top: 48%;
+        width: 40px;
+    }
+
+    50% {
+        top: 48%;
+        width: 40px;
+    }
+
+    100% {
+        top: 48.2%;
+        width: 40.5px;
+    }
+}
+
+.key-piece-fortress {
+    z-index: 2;
+    position: absolute;
+    top: 5%;
+    left: 33.8%;
+    width: 50px;
+    animation: keyAnimationFortress 2s ease-in infinite alternate-reverse;
+    cursor: grab;
+}
+
+@keyframes keyAnimationFortress {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+
+    50% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+
+    75% {
+        transform: rotate3d(0, 1, 0, 270deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    } 
+    /* 0% {
+        top: 5%;
+    width: 50px;
+    }
+
+    25% {
+        top: 4.6%;
+    width: 50px;
+    }
+
+    50% {
+        top: 4.1%;
+        width: 50px;
+    }
+
+    100% {
+        top: 3.6%;
+        width: 51px;
+    } */
+}
+
+.collected-key {
+    animation: keyCollection 1.5s ease-in-out forwards;
+}
+
+@keyframes keyCollection {
+    0% {
+        transform: scale(1.1);
+    }
+
+    90% {
+        transform: scale(0.8);
+        opacity: 0.5;
+        top: 5%;
+        right: 5%;
+    }
+    100% {
+        display: none;
+    }
+}
+
+.label-hasla {
+    display: block;
+    color: snow;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+}
+
+.label-hidden {
+    color: rgba(0, 0, 0, .5);
+}
+
+/* fortress letters */
+
+.label-fortress {
+    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 5%, rgba(255, 180, 40, .2) 25%, rgba(255, 180, 40, .4) 50%, rgba(255, 180, 40, .2) 65%, rgba(0, 0, 0, 0) 95%);
+}
+
+.letter-fortress {
+    background-color: rgba(255, 180, 40, .4);
+    border: 3px rgb(255, 180, 40) solid;
+}
+
+.letter-fortress:focus {
+    animation: fortress .2s ease-in-out forwards;
+}
+
+@keyframes fortress {
+    0% {
+        background-color: rgba(255, 180, 40, .4);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, .2);
+    }
+}
+
+.letter-fortress-correct {
+    background-color: rgba(0, 0, 0, .4);
+    border: 3px rgb(255, 175, 25) solid;
+    pointer-events: none;
+}
+
+/* academy letters */
+
+.label-academy {
+    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 5%, rgba(40, 151, 255, .2) 25%, rgba(40, 151, 255, .4) 50%, rgba(40, 151, 255, .2) 65%, rgba(0, 0, 0, 0) 95%);
+}
+
+.letter-academy {
+    background-color: rgba(40, 151, 255, .4);
+    border: 3px rgb(40, 151, 255) solid;
+}
+
+.letter-academy:focus {
+    animation: academy .2s ease-in-out forwards;
+}
+
+@keyframes academy {
+    0% {
+        background-color: rgba(40, 151, 255, .4);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, .2);
+    }
+}
+
+.letter-academy-correct {
+    background-color: rgba(0, 0, 0, .4);
+    border: 3px rgb(27, 145, 255) solid;
+    pointer-events: none;
+}
+
+/* dungeon letters */
+
+.label-dungeon {
+    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 5%, rgba(140, 40, 255, .2) 25%, rgba(140, 40, 255, .4) 50%, rgba(140, 40, 255, .2) 65%, rgba(0, 0, 0, 0) 95%);
+}
+
+.letter-dungeon {
+    background-color: rgba(140, 40, 255, .4);
+    border: 3px rgb(140, 40, 255) solid;
+}
+
+.letter-dungeon:focus {
+    animation: dungeon .2s ease-in-out forwards;
+}
+
+@keyframes dungeon {
+    0% {
+        background-color: rgba(140, 40, 255, .4);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, .2);
+    }
+}
+
+.letter-dungeon-correct {
+    background-color: rgba(0, 0, 0, .4);
+    border: 3px rgb(132, 24, 255) solid;
+    pointer-events: none;
+}
+
+.letter {
+    width: 45px;
+    height: 55px;
+    margin: 5px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: white;
+}
+
+.letter:focus {
+    outline: none;
+}
+
+.hidden-letter {
+    color: white;
+    font-size: 100px;
+    position: relative;
+    width: 50px;
+}
+
+.message {
+    background: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 2));
+    color: whitesmoke;
+    border: 3px snow solid;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg-darkered {
+    background: rgba(0, 0, 0, .5);
+}
+
+
+/* .module {
+    cursor: url('path-to-image.png'), auto;	
+  } */

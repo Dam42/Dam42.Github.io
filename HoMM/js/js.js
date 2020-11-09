@@ -46,11 +46,18 @@ lettersDungeon.forEach(letter => {
           });
         userPasswordDungeon = attemptetPasswordDungeon.toUpperCase();
         chechDungeonLetters();
-        if(correctPasswordDungeon === userPasswordDungeon) alert("Dobrze Dungeon");  
+        if(correctPasswordDungeon === userPasswordDungeon) {
+            correctPasswords++;  
+            guessedPassword = "dungeon";
+            createKey(guessedPassword);
+            document.querySelector(".label-dungeon").innerHTML="Dungeon<sup>&#9745;</sup>";
+        }
     });
 });
 
 // ---------------------------------- Sprawdzanie hasła fortress ----------------------------------
+
+let correctPasswords = 0; 
 
 let correctPasswordFortress = "AEGIS";
 
@@ -74,7 +81,12 @@ lettersFortress.forEach(letter => {
           });
         userPasswordFortress = attemptetPasswordFortress.toUpperCase();
         chechFortressLetters();
-        if(correctPasswordFortress === userPasswordFortress) alert("Dobrze Fortress");  
+        if(correctPasswordFortress === userPasswordFortress) {
+            correctPasswords++;  
+            guessedPassword = "fortress";
+            createKey(guessedPassword);
+            document.querySelector(".label-fortress").innerHTML="Fortress<sup>&#9745;</sup>";
+        }
     });
 });
 
@@ -102,6 +114,34 @@ lettersAcademy.forEach(letter => {
           });
         userPasswordAcademy = attemptetPasswordAcademy.toUpperCase();
         chechAcademyLetters();
-        if(correctPasswordAcademy === userPasswordAcademy) alert("Dobrze Academy");  
+        if(correctPasswordAcademy === userPasswordAcademy) { 
+            correctPasswords++; 
+            guessedPassword = "academy";
+            createKey(guessedPassword);
+            document.querySelector(".label-academy").innerHTML="Academy<sup>&#9745;</sup>";
+        }
     });
 });
+
+// ---------------------------------- Mechanika Klucza ----------------------------------
+
+const key = document.querySelector(".key");
+
+let collectedKeys = 0;
+
+const createKey = (place) => {
+    newKeyPiece = document.createElement("img");
+    newKeyPiece.src=`img/keyPiece${correctPasswords}of3.png`;
+    newKeyPiece.classList.add(`key-piece-${place}`);
+    document.querySelector(`.container-${place}`).appendChild(newKeyPiece);
+    finalizeKey(newKeyPiece);
+}
+
+ const finalizeKey = (klucz) => {
+    klucz.addEventListener("click", () => {
+        collectedKeys++
+        klucz.classList.add(`collected-key`);
+        setTimeout(() => {klucz.classList.add(`hidden`);
+        key.src=`img/key${collectedKeys}of3.png`;}, 1300)
+    });
+}
