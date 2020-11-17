@@ -1,0 +1,107 @@
+.row {
+    width: 100vw;
+}
+
+a:link {
+    display: block;
+    margin: 5px;
+    font-size: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    color: blue;
+}
+a:visited {
+    background-color: gray;
+}
+a:hover {
+    transform: scale(1.1);
+    color: crimson;
+    transition: .7s all ease-in-out;
+}
+a:active {
+    background-color: yellow;
+}
+
+
+input {
+    margin: 10px;
+}
+
+input:focus {
+    background-color: black;
+    color: snow;
+    transition: all .3s;
+}
+
+input:checked {
+    transform: scale(2.2);
+}
+
+input:disabled {
+    pointer-events: none;
+    color: gray;
+}
+
+input[type="password"]:enabled {
+    color: yellow;
+    background-color: purple;
+} 
+
+
+h5:empty {
+    background-color: black;
+    height: 20px;
+}
+
+p {
+    color: white;
+}
+
+p:first-child {
+    background-color: royalblue !important;
+}
+
+p:nth-child(even) {
+    background-color: green;
+}
+p:nth-child(odd) {
+    background-color: purple;
+}
+
+p:last-child {
+    background-color: red;
+}
+
+h4::first-letter {
+    font-size: 50px;
+    color: blueviolet;
+}
+
+h4::first-line {
+    background-color: cornflowerblue;
+}
+
+h4::selection {
+    color: white;
+    background-color: white;
+}
+
+h6::before {
+    content: "Oraz Brakujące ";
+    color: red;
+}
+h6::after {
+    content: " Before & After";
+    color: blue;
+}
+
+
+footer {
+    position: fixed;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
+    left: .0001%;
+    bottom: 0%;
+}
